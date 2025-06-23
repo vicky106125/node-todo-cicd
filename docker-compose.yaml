@@ -2,6 +2,7 @@ version: '3.9'
 
 services:
   web:
-    image:"vicky106125/notes-app:latest"
+    build:
+      context: .
     ports:
       - "8000:8000"
